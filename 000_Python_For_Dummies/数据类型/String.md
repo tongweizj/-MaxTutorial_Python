@@ -52,3 +52,26 @@ message = '\twei' // \转译 t制表符
 message= 'tong'
 message = '\nwei' // \转译 n换行
 ```
+
+## 常见问题
+
+### 字符串查找
+```python
+a = '1234569064323'
+if '64' in a:
+   print('Yes')
+ else:
+   print('No')
+ 
+#Yes
+```
+
+### 字符串替换
+
+```python
+lines = []
+with open(filename) as file_python:
+  lines = file_python.readlines()
+for line in lines:
+  print(line.strip().replace('Python','C'))  # 前一个参数是被替换的字符串
+```
